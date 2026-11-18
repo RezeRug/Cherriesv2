@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "category": "Puzzle",
+    "description": "Combine matching tiles to reach the 2048 tile.",
+    "url": "https://play2048.co/",
+    "symbol": "\u25a6"
+  },
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "category": "Puzzle",
+    "description": "A fast-paced hexagon puzzle game.",
+    "url": "https://hextris.io/",
+    "symbol": "\u2b21"
+  },
+  {
+    "id": "littlealchemy2",
+    "title": "Little Alchemy 2",
+    "category": "Casual",
+    "description": "Combine elements and discover new creations.",
+    "url": "https://littlealchemy2.com/",
+    "symbol": "\u2697"
+  },
+  {
+    "id": "neal-fun",
+    "title": "Neal.fun",
+    "category": "Casual",
+    "description": "A collection of interactive web experiments and mini-games.",
+    "url": "https://neal.fun/",
+    "symbol": "\u2733"
+  },
+  {
+    "id": "playsnake",
+    "title": "Snake",
+    "category": "Arcade",
+    "description": "A classic snake game. Check the host's current availability.",
+    "url": "https://playsnake.org/",
+    "symbol": "\u3030"
+  },
+  {
+    "id": "itch-html5",
+    "title": "itch.io HTML5 Games",
+    "category": "Strategy",
+    "description": "Browse browser-playable games; individual games have their own requirements.",
+    "url": "https://itch.io/games/html5",
+    "symbol": "\ud83c\udfae"
+  }
+]

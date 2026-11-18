@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Cherries — a searchable directory of browser games.">
+  <title>Cherries — Game Library</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Cherries home">
+      <span class="brand-mark">✳</span><span>cherries<span class="brand-dot">.</span></span>
+    </a>
+    <div class="topbar-right"><span class="status-dot"></span><span>GAME DIRECTORY</span></div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT FAVORITE GAME</p>
+      <h1>Pick a game.<br><span>Press play.</span></h1>
+      <p class="hero-copy">A simple directory for discovering browser games. Availability depends on your network and each game's host.</p>
+      <label class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Search games or categories..." autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+      <div class="hero-meta"><span id="game-count">Loading library…</span><span>Curated links · Opens official game sites</span></div>
+    </section>
+
+    <section class="library">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE</p><h2>Game library</h2></div>
+        <button id="favorites-toggle" class="ghost-button" type="button" aria-pressed="false">♡ Favorites</button>
+      </div>
+      <nav id="categories" class="category-list" aria-label="Game categories">
+        <button class="category active" data-category="All">All games</button>
+        <button class="category" data-category="Arcade">Arcade</button>
+        <button class="category" data-category="Puzzle">Puzzle</button>
+        <button class="category" data-category="Strategy">Strategy</button>
+        <button class="category" data-category="Casual">Casual</button>
+      </nav>
+      <div id="games" class="game-grid" aria-live="polite">
+        <div class="loading-card">Loading games…</div>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>No games match that search. Try another title or category.</p>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Cherries</span>
+      <span>Play responsibly. Follow your school's technology rules.</span>
+    </footer>
+  </main>
+
+  <template id="game-card-template">
+    <article class="game-card">
+      <div class="card-art"><span class="art-symbol"></span><button class="favorite-button" type="button" aria-label="Add to favorites">♡</button></div>
+      <div class="card-content">
+        <div class="card-topline"><span class="game-category"></span><span class="game-tag">BROWSER</span></div>
+        <h3 class="game-title"></h3>
+        <p class="game-description"></p>
+        <a class="play-button" target="_blank" rel="noopener noreferrer">Open game <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
